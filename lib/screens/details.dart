@@ -44,13 +44,16 @@ class Details extends StatelessWidget {
                       '${trip.nights} night stay for only \$${trip.price}',
                       style: TextStyle(letterSpacing: 1)),
                   trailing: Heart()),
-              SingleChildScrollView(
-                child: Padding(
-                  padding: EdgeInsets.all(18),
-                  child: Text(
-                    paragraphs,
-                    style: TextStyle(
-                      color: Colors.grey[600],
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Padding(
+                    padding: EdgeInsets.all(18),
+                    child: Text(
+                      paragraphs,
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.grey[600],
+                      ),
                     ),
                   ),
                 ),
